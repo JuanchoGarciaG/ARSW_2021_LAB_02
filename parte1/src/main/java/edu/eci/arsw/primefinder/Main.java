@@ -1,14 +1,16 @@
 package edu.eci.arsw.primefinder;
 
+import java.util.List;
+
 public class Main {
 
 	public static void main(String[] args) {
 		
-		PrimeFinderThread pft=new PrimeFinderThread(0, 30000000);
-		
-		pft.start();
-		
-		
+		PrimeFinder pft=new PrimeFinder(0, 30000000, 3);
+
+		pft.find();
+
+
 	}
 	
 }
